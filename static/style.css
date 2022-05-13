@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    height: 100vh;
+}
+
+pre {
+    margin: 0;
+    padding: 0; 
+}
+li {
+    list-style-type: none;
+}
+.content {
+    box-shadow: rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100vh;
+    max-height: 530px;
+    width: 100vw;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+.header {
+    background: #6363bf;
+    color: white;
+    line-height: 45px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 2px solid red;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.banner {
+    margin: 10px 40px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.footer {
+    line-height: 50px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+input  {
+    border: ipx;
+    flex-grow: 0;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+button {
+    height: 35px;
+    border: ipx;
+    font-size: 16px;
+    cursor: pointer;
+}
