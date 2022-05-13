@@ -8,9 +8,10 @@ This application sends your chat messages
 live across the world using a global
 'BroadcastChannel' in Deno Deploy.
 
+code: https://github.com/nhrones/FreshChat2
+
 `
-export const askForName = `Before you can chat, we need a username.
-`
+export const askForName = `Before you can chat, we need a username.`
 export interface Message {
     id: string;
     ts: string;
