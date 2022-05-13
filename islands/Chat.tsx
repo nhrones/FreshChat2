@@ -5,9 +5,7 @@ import ChatHistory from './ChatHistory.tsx'
 import SendField from './SendField.tsx'
 
 export default function Chat() {
-    const [user, setUser] = useState(
-        (localStorage?.getItem("username")) || "",
-    );
+    const [user, setUser] = useState("");
     
     const [status, setStatus] = useState(ctx.DISCONNECTED);
     
@@ -16,9 +14,9 @@ export default function Chat() {
         [],
     );
     
-    useEffect(() => {
-        localStorage.setItem("username", user);
-    }, [user]);
+    // useEffect(() => {
+    //     localStorage.setItem("username", user);
+    // }, [user]);
 
     useEffect(() => {
         const events = new EventSource("/api/listen");
