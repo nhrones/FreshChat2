@@ -13,10 +13,6 @@ export default function Chat() {
         (msgs, msg) => [...msgs, msg],
         [],
     );
-    
-    // useEffect(() => {
-    //     localStorage.setItem("username", user);
-    // }, [user]);
 
     useEffect(() => {
         const events = new EventSource("/api/listen");
