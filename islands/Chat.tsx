@@ -1,12 +1,18 @@
 /** @jsx h */
-import { h, useEffect, useReducer, useState, } from "../client_deps.ts";
+import { h, useEffect, useReducer, useState, IS_BROWSER } from "../client_deps.ts";
 import * as ctx from '../ctx.ts';
 import ChatHistory from './ChatHistory.tsx'
 import SendField from './SendField.tsx'
 
 export default function Chat() {
-    const [user, setUser] = useState("");
+    const [user, setUser] = useState(
+        (IS_BROWSER && localStorage?.getItem("username")) || "",
+      );
     
+      useEffect(() => {
+        localStorage.setItem("username", user);
+      }, [user]);
+      
     const [status, setStatus] = useState(ctx.DISCONNECTED);
     
     const [messages, addMessage] = useReducer<ctx.Message[], ctx.Message>(
