@@ -1,5 +1,6 @@
 /** @jsx h */
-import { h, useCallback, useState, } from "../client_deps.ts";
+import { h } from "preact";
+import { useCallback, useState  } from "preact/hooks";
 
 export default function SendField(props: { user: string }) {
     const [message, setMessage] = useState("");

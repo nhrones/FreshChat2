@@ -1,5 +1,8 @@
 /** @jsx h */
-import { h, useEffect, useReducer, useState, IS_BROWSER } from "../client_deps.ts";
+import { h } from "preact";
+import { useEffect, useReducer, useState  } from "preact/hooks";
+import { IS_BROWSER } from '$fresh/runtime.ts';
+
 import * as ctx from '../ctx.ts';
 import ChatHistory from './ChatHistory.tsx'
 import SendField from './SendField.tsx'

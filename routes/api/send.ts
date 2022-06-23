@@ -1,5 +1,6 @@
 
-import { HandlerContext } from "../../server_deps.ts";
+import { HandlerContext } from "$fresh/server.ts";
+
 import { Message } from "../../ctx.ts";
 
 export const handler = async (_req: Request, _ctx: HandlerContext): Promise<Response> => {

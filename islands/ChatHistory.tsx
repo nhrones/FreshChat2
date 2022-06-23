@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h, } from "../client_deps.ts";
+import { h } from "preact";
 import { Message } from '../ctx.ts';
 
 export default function ChatHistory(props: { status: string, messages: Message[] }) {
