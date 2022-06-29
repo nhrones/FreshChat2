@@ -1,11 +1,7 @@
-# fresh project
+# Fresh Chat
 
-### Usage
+A fresh chat app hosted on Deno Deploy.     
+The server api is only used to negociate WebRTC connections between two clients.     
+This signel server communicates to clients using Server Sent Events and BroadcastChannels.    
 
-Start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+[fresh-chat.deno.dev](https://fresh-chat.deno.dev/)
